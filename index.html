@@ -18,11 +18,11 @@
         <nav class="navBar">
             <ul class="lista">
                 <img class="logo" src="./img/LOGO.svg" width="300px" height="200px" alt="">
-                <li id="links"><a href="#conoce">Conócenos</a> </li>
-                <li id="links"><a href="#ingresa">Ingresa</a> </li>
-                <li id="links"><a href="#enc">Encuestadoras</a> </li>
-                <li id="links"><a href="#nos">Nosotros</a> </li>
-                <li id="links"><a href="#cont">Contacto</a> </li>
+                <li id="links"><a data-scroll href="#conoce">Conócenos</a> </li>
+                <li id="links"><a data-scroll href="#ingresa">Ingresa</a> </li>
+                <li id="links"><a data-scroll href="#enc">Encuestadoras</a> </li>
+                <li id="links"><a data-scroll href="#nos">Nosotros</a> </li>
+                <li id="links"><a data-scroll href="#cont">Contacto</a> </li>
                 <li id="links"><a><i class="fas fa-search"></i></a></li>
             </ul>
         </nav>
@@ -164,6 +164,11 @@
 
 
     <script src="./js/funciones.js"></script>
+    <script src="./js/smooth-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 
 </body>
 
