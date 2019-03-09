@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'KeepCalm';
+    src: url("../fonts/KeepCalm-Medium.ttf");
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'KeepCalm';
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #1d70b8;
+}
+
+
+/* navbar */
+
+.navBar {
+    margin-top: -50px;
+    margin-bottom: -80px;
+    margin-right: 100px;
+}
+
+.lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 12px;
+    margin-right: 300px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#logo {
+    display: grid;
+    width: 100px;
+    height: 100px;
+}
+
+#links {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 15px;
+}
+
+
+/* slider */
+
+.slider {
+    width: auto;
+    height: 500px;
+    background-color: gray;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* conoce */
+
+.conoce {
+    text-align: center;
+    font-size: 16px;
+}
+
+video {
+    margin-bottom: 40px;
+}
+
+
+/* ingresa */
+
+.ingresa,
+.ingresa a {
+    text-align: center;
+    color: white;
+}
+
+.ingresa a:hover {
+    color: black;
+}
+
+.listaIngresa {
+    background: #1d70b8;
+    list-style: none;
+}
+
+.listaIngresa .titIngresa {
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.blanco {
+    background: white;
+}
+
+.linkIngresa {
+    margin-right: 50px;
+    display: grid;
+    grid-auto-flow: row;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+.linkIngresa span {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.linkIngresa a {
+    font-size: 12px;
+    padding-top: 40px;
+}
+
+.registrar {
+    background: #1d70b8;
+}
+
+.registrar a {
+    text-decoration: underline;
+}
+
+
+/* encuestadoras */
+
+.encuestadoras {
+    margin-left: 13%;
+}
+
+.tituloEnc {
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: center;
+    margin-right: 150px;
+}
+
+.encuestadorasList {
+    color: #1d70b8;
+    text-align: left;
+    list-style: none;
+}
+
+.encuestadorasItem {
+    padding-bottom: 20px;
+}
+
+.encuestadorasItem p {
+    color: black;
+    text-align: left;
+}
+
+.encuestadorasItem .small {
+    color: #1d70b8;
+    text-align: left;
+    font-size: 14px;
+}
+
+.numeros {
+    float: left;
+    margin-left: 250px;
+    padding-top: 25px;
+    align-content: center;
+}
+
+.fa-circle {
+    font-size: 65px;
+    float: left;
+    color: #d7d7d7;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+
+/* nosotros */
+
+.nosotros {
+    background: #1d70b8;
+    color: white;
+}
+
+.division {
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    grid-gap: 40px;
+}
+
+.titNos {
+    text-align: center;
+    text-justify: auto;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.textoNos {
+    text-align: left;
+    font-size: 12px;
+    width: 500px;
+    height: 300px;
+}
+
+.sliderNosotros {
+    width: 300px;
+    height: 200px;
+    background: #717171;
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 160px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* contacto */
+
+.contacto {
+    overflow: hidden;
+}
+
+.frmContacto {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.frmUno input {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 300px;
+    height: 20px;
+    width: 400px;
+    border: 2px solid #717171;
+    border-radius: 5px;
+}
+
+.frmDos {
+    margin-right: 250px;
+}
+
+textarea {
+    border: 2px solid #717171;
+    border-radius: 5px;
+}
+
+.frmDos input {
+    justify-content: end;
+    border: 2px solid #717171;
+    border-radius: 5px;
+    color: white;
+    background: #717171;
+    margin-left: 170px;
+}
+
+.info {
+    color: #717171;
+    font-size: 12px;
+    margin-left: 310px;
+}
+
+
+/* pie de pagina */
+
+footer {
+    background: #1d70b8;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    height: 20px;
+    padding-top: 20px;
+}
